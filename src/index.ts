@@ -12,7 +12,7 @@ export type RandomType =
 
 class CheweyBotAPI {
 	apiKey: string;
-	userAgent = `CheweyBotAPI/${pkg.version} (https://npm.im/cheweybotapi)`;
+	userAgent = `CheweyAPI/${pkg.version} (https://npm.im/cheweyapi)`;
 	analytics: Analytics;
 	/**
 	 * Construct a new instance of CheweyBotAPI

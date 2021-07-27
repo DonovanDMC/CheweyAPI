@@ -5,7 +5,7 @@ import { EventEmitter } from "stream";
 export type BotAnalytics = Record<"servers" | "users" | "channels" | "sent_messages" | "received_messages" | "ram_used", number> & { created: string; };
 export default class CheweyBotAPIAnalytics {
 	apiKey: string;
-	userAgent = `CheweyBotAPI/${pkg.version} (https://npm.im/cheweybotapi)`;
+	userAgent = `CheweyAPI/${pkg.version} (https://npm.im/cheweyapi)`;
 	private interval: NodeJS.Timeout | undefined;
 	private sentMessages = 0;
 	private receivedMessages = 0;
