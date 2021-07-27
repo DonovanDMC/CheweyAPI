@@ -1,0 +1,43 @@
+{
+  "name": "cheweybotapi",
+  "version": "1.0.0",
+  "description": "NodeJS Wrapper for https://api.chewey-bot.top.",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "rm -rf build && tsc && echo Build Finished",
+    "test:discordjs": "npx ts-node test/auto-discordjs.ts",
+    "test:eris": "npx ts-node test/auto-eris.ts",
+    "test:random": "npx ts-node test/random.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonovanDMC/CheweyBotAPI.git"
+  },
+  "keywords": [
+    "chewey-bot",
+    "chewey-bot-api",
+    "api"
+  ],
+  "author": "Donovan_DMC (https://donovan.is.gay)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DonovanDMC/CheweyBotAPI/issues"
+  },
+  "homepage": "https://github.com/DonovanDMC/CheweyBotAPI#readme",
+  "files": [
+    "/build",
+    "/tsconfig.json"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.4.3",
+    "@uwu-codes/eslint-config": "^1.0.18",
+    "@uwu-codes/tsconfig": "^1.0.1",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "discord.js": "*",
+    "eris": "*"
+  }
+}
