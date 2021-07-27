@@ -1,6 +1,6 @@
 {
   "name": "cheweyapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NodeJS Wrapper for https://api.chewey-bot.top.",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DonovanDMC/CheweyBotAPI.git"
+    "url": "git+https://github.com/DonovanDMC/CheweyAPI.git"
   },
   "keywords": [
     "chewey-bot",
@@ -22,9 +22,9 @@
   "author": "Donovan_DMC (https://donovan.is.gay)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DonovanDMC/CheweyBotAPI/issues"
+    "url": "https://github.com/DonovanDMC/CheweyAPI/issues"
   },
-  "homepage": "https://github.com/DonovanDMC/CheweyBotAPI#readme",
+  "homepage": "https://github.com/DonovanDMC/CheweyAPI#readme",
   "files": [
     "/build",
     "/tsconfig.json"
