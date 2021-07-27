@@ -1,5 +1,5 @@
 {
-  "name": "cheweybotapi",
+  "name": "cheweyapi",
   "version": "1.0.0",
   "description": "NodeJS Wrapper for https://api.chewey-bot.top.",
   "main": "build/src/index.js",
