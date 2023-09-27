@@ -1,14 +1,19 @@
 {
   "name": "cheweyapi",
-  "version": "1.0.2",
+  "version": "2.0.3",
   "description": "NodeJS Wrapper for https://api.chewey-bot.top.",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "module": "./esm.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "require": "./dist/lib/index.js",
+      "import": "./esm.mjs"
+    }
+  },
   "scripts": {
-    "prepublishOnly": "rm -rf build && tsc && echo Build Finished",
-    "test:discordjs": "npx ts-node test/auto-discordjs.ts",
-    "test:eris": "npx ts-node test/auto-eris.ts",
-    "test:random": "npx ts-node test/random.ts"
+    "prepublishOnly": "rm -rf dist && tsc && cp lib/types.d.ts dist/lib && echo Build Finished"
   },
   "repository": {
     "type": "git",
@@ -26,16 +31,16 @@
   },
   "homepage": "https://github.com/DonovanDMC/CheweyAPI#readme",
   "files": [
-    "/build",
-    "/tsconfig.json"
+    "/dist",
+    "esm.mjs"
   ],
   "devDependencies": {
-    "@types/node": "^16.4.3",
-    "@uwu-codes/eslint-config": "^1.0.18",
-    "@uwu-codes/tsconfig": "^1.0.1",
-    "discord.js": "^12.5.3",
-    "eris": "^0.15.1",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
+    "@types/node": "^20.6.5",
+    "@uwu-codes/eslint-config": "^1.1.26",
+    "@uwu-codes/tsconfig": "^1.0.7",
+    "eslint": "^8.50.0",
+    "oceanic.js": "^1.8.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }

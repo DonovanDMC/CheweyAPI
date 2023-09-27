@@ -1,21 +1,15 @@
 {
-	"extends": "@uwu-codes/tsconfig",
-	"compilerOptions": {
-		"outDir": "./build",
-		"baseUrl": "./src",
-		"strictPropertyInitialization": false,
-		"skipLibCheck": true,
-		"inlineSourceMap": true,
-		"declaration": true
-	},
-	"include": [
-		"**/*"
-	],
-	"exclude": [
-		"node_modules",
-		"build",
-		"tmp",
-		"logs",
-		"test"
-	]
+  "extends": "@uwu-codes/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "inlineSourceMap": true,
+    "declaration": true,
+    "importHelpers": false,
+    "ignoreDeprecations": "5.0"
+  },
+  "include": ["lib/**/*.ts"],
+  "exclude": ["node_modules", "dist", "test"],
+  "ts-node": {
+    "swc": false
+  }
 }
