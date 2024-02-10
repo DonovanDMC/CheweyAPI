@@ -7,7 +7,7 @@ export const CategoryList = [
     "koala", "nature", "otter", "owl",
     "panda", "rabbit", "racoon", "red-panda",
     "snake", "space", "turtle", "wallaby",
-    "whale", "wolf"
+    "whale", "wolf", "bird"
 ] as const;
 
 export function CreateImagesWrapper(doRequest: (path: string, raw: boolean) => unknown, props: Array<string> = []): ImagesStructure {

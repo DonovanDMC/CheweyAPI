@@ -29,6 +29,7 @@ export default class CheweyBotAPIAnalytics {
         this.onReceive = () => this.receivedMessages++;
         this.onSend = () => this.sentMessages++;
     }
+
     private getMemoryUsage: (this: void) => number = () => process.memoryUsage().rss;
 
     private initMessages() {
